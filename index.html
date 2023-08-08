@@ -7,13 +7,7 @@
     <title>gordo</title>
 
 
-    <style>
-        .comments {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-    </style>
+   <link rel="stylesheet" href="style.css">
 
 
 
@@ -24,36 +18,17 @@
 
 
 <body>
+ 
+
+    <h1>The world is yours</h1>
+
+    <div class="pai">
+      <div><img src="gif.gif" alt=""></div>
+      <div><img src="gif.gif" alt=""></div>
+      <div><img src="gif.gif" alt=""></div>  
+    </div>
     
-<h1>The world is yours <a href="https://www.youtube.com/watch?v=x3mgQA-j2AM" target="_blank">SONG</a>
-</h1>
-
-
-<center>
-    ##
-    <a href="https://www.youtube.com/watch?v=Hq6I-xPwtU0" target="_blank">Blaze Runner</a>
-<p>    <img src="bladerunner.avif" alt="2049"></p>
-</center>
-
-
-
-<center>
-<p id="demo">the eyes chico.</p>
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Os olhos chico"'>Scarface</button>
-</center>
-
-
-
-
-
-<center>
-<div>
-    ##
-    <a href="https://www.youtube.com/watch?v=XMEXPkPmmq0" target="_blank">Mr. Robot</a>
-     <img src="fsociety.jpg" alt="eliot">
-</div>
-</center>
+   
 
 
 
@@ -61,37 +36,120 @@
 
 
 
-<h1>...</h1>
-<div class="comments">
-    <h2>Deixe sua mensagem:</h2>
-    <input type="text" id="Usuário" placeholder="Usuário">
-    <textarea id="Sua mensagem" placeholder="Sua mensagem"></textarea>
-    <button onclick="adicionarComentario()">Mandar</button>
-</div>
-<div id="comentariosAnteriores">
-    <h2>Anteriores:</h2>
-</div>
-<script>
-    function adicionarComentario() {
-        var nome = document.getElementById("Usuário").value;
-        var comentario = document.getElementById("Sua mensagem").value;
 
-        if (nome && comentario) {
-            var comentarioHtml = "<p><strong>" + nome + ":</strong> " + comentario + "</p>";
-            document.getElementById("comentariosAnteriores").innerHTML += comentarioHtml;
 
-            // Limpar campos após adicionar o comentário
-            document.getElementById("Usuário").value = "";
-            document.getElementById("Sua mensagem").value = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+    
+        
+    <h1>The world is yours <a href="https://www.youtube.com/watch?v=x3mgQA-j2AM" target="_blank">SONG</a>
+    </h1>
+    
+    
+    <center>
+        ##
+        <a href="https://www.youtube.com/watch?v=Hq6I-xPwtU0" target="_blank">Blaze Runner</a>
+    <p>    <img src="bladerunner.avif" alt="2049"></p>
+    </center>
+    
+    
+    
+    <center>
+    <p id="demo">the eyes chico.</p>
+    
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Os olhos chico"'>Scarface</button>
+    </center>
+    
+    
+    
+    
+    
+    <center>
+    <div>
+        ##
+        <a href="https://www.youtube.com/watch?v=XMEXPkPmmq0" target="_blank">Mr. Robot</a>
+         <img src="fsociety.jpg" alt="eliot">
+    </div>
+    </center>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h1>...</h1>
+    <div class="comments">
+        <h2>Deixe sua mensagem:</h2>
+        <input type="text" id="Usuário" placeholder="Usuário">
+        <textarea id="Sua mensagem" placeholder="Sua mensagem"></textarea>
+        <button onclick="adicionarComentario()">Mandar</button>
+    </div>
+    <div id="comentariosAnteriores">
+        <h2>Anteriores:</h2>
+    </div>
+    <script>
+        function adicionarComentario() {
+            var nome = document.getElementById("Usuário").value;
+            var comentario = document.getElementById("Sua mensagem").value;
+    
+            if (nome && comentario) {
+                var comentarioHtml = "<p><strong>" + nome + ":</strong> " + comentario + "</p>";
+                document.getElementById("comentariosAnteriores").innerHTML += comentarioHtml;
+    
+                // Limpar campos após adicionar o comentário
+                document.getElementById("Usuário").value = "";
+                document.getElementById("Sua mensagem").value = "";
+            }
         }
-    }
-</script>
+    </script>
+    
+    
+    
+    
+    
+    <script src="script.js"></script>
+    
+    
+    
+    
 
 
 
 
 
-<script src="script.js"></script>
+
+
+
+
+
+
 
 </body>
 </html>
