@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gordo</title>
+
+
+    <style>
+        .comments {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+
+
+
+
 </head>
 
 
@@ -24,12 +38,60 @@
 
 
 <center>
+<p id="demo">the eyes chico.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Os olhos chico"'>Scarface</button>
+</center>
+
+
+
+
+
+<center>
 <div>
     ##
     <a href="https://www.youtube.com/watch?v=XMEXPkPmmq0" target="_blank">Mr. Robot</a>
      <img src="fsociety.jpg" alt="eliot">
 </div>
 </center>
+
+
+
+
+
+
+
+<h1>Sistema de Comentários</h1>
+<div class="comments">
+    <h2>Deixe um Comentário:</h2>
+    <input type="text" id="nome" placeholder="Seu nome">
+    <textarea id="comentario" placeholder="Seu comentário"></textarea>
+    <button onclick="adicionarComentario()">Enviar</button>
+</div>
+<div id="comentariosAnteriores">
+    <h2>Comentários Anteriores:</h2>
+</div>
+<script>
+    function adicionarComentario() {
+        var nome = document.getElementById("nome").value;
+        var comentario = document.getElementById("comentario").value;
+
+        if (nome && comentario) {
+            var comentarioHtml = "<p><strong>" + nome + ":</strong> " + comentario + "</p>";
+            document.getElementById("comentariosAnteriores").innerHTML += comentarioHtml;
+
+            // Limpar campos após adicionar o comentário
+            document.getElementById("nome").value = "";
+            document.getElementById("comentario").value = "";
+        }
+    }
+</script>
+
+
+
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
