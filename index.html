@@ -61,28 +61,28 @@
 
 
 
-<h1>Sistema de Comentários</h1>
+<h1>...</h1>
 <div class="comments">
-    <h2>Deixe um Comentário:</h2>
-    <input type="text" id="nome" placeholder="Seu nome">
-    <textarea id="comentario" placeholder="Seu comentário"></textarea>
-    <button onclick="adicionarComentario()">Enviar</button>
+    <h2>Deixe sua mensagem:</h2>
+    <input type="text" id="Usuário" placeholder="Usuário">
+    <textarea id="Sua mensagem" placeholder="Sua mensagem"></textarea>
+    <button onclick="adicionarComentario()">Mandar</button>
 </div>
 <div id="comentariosAnteriores">
-    <h2>Comentários Anteriores:</h2>
+    <h2>Anteriores:</h2>
 </div>
 <script>
     function adicionarComentario() {
-        var nome = document.getElementById("nome").value;
-        var comentario = document.getElementById("comentario").value;
+        var nome = document.getElementById("Usuário").value;
+        var comentario = document.getElementById("Sua mensagem").value;
 
         if (nome && comentario) {
             var comentarioHtml = "<p><strong>" + nome + ":</strong> " + comentario + "</p>";
             document.getElementById("comentariosAnteriores").innerHTML += comentarioHtml;
 
             // Limpar campos após adicionar o comentário
-            document.getElementById("nome").value = "";
-            document.getElementById("comentario").value = "";
+            document.getElementById("Usuário").value = "";
+            document.getElementById("Sua mensagem").value = "";
         }
     }
 </script>
