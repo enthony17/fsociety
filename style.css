@@ -1,4 +1,18 @@
-body{
+
+.pai {
+display: flex;
+background-color: rgb(76, 13, 134);
+flex-direction: column;
+  }
+  
+  .pai > div {
+    background-color: #000000;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  body{
     color: rgb(228, 112, 218);
     background-color:black ;
 }
@@ -13,5 +27,5 @@ a{
 }
 
 div{
-    color: yellow;
+    color: blueviolet;
 }
