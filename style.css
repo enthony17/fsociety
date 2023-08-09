@@ -2,7 +2,7 @@
 .pai {
 display: flex;
 background-color: rgb(76, 13, 134);
-flex-direction: row;
+flex-direction: row-reverse;
 justify-content: center;
   }
   
