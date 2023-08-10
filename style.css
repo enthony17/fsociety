@@ -2,8 +2,8 @@
 .pai {
 display: flex;
 background-color: rgb(76, 13, 134);
-flex-direction: row;
-justify-content: center;
+flex-direction: column;
+justify-content: space-around;
   }
   
   .pai > div {
@@ -11,7 +11,7 @@ justify-content: center;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
-    justify-self: center;
+    justify-content: space-around;
   }
 
   body{
