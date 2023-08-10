@@ -3,7 +3,7 @@
 display: flex;
 background-color: rgb(76, 13, 134);
 flex-direction: column;
-justify-content: space-around;
+justify-content: center;
   }
   
   .pai > div {
@@ -11,7 +11,7 @@ justify-content: space-around;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   body{
